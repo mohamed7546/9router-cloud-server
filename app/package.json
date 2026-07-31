@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev --port 20127",
     "dev:webpack": "next dev --webpack --port 20127",
-    "build": "mkdir -p .next && cp -r .next-cli-build/* .next/ 2>/dev/null || true",
+    "build": "node -e \"const fs=require('fs'); if(fs.existsSync('.next-cli-build')) fs.cpSync('.next-cli-build', '.next', {recursive:true});\"",
     "start": "next start --port 20127",
     "dev:bun": "bun --bun next dev --webpack --port 20127",
     "build:bun": "bun --bun next build --webpack",
