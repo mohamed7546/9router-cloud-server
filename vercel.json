@@ -1,5 +1,15 @@
 {
-  "framework": null,
-  "buildCommand": "node -e \"const fs=require('fs'); if(fs.existsSync('.next-cli-build')) fs.cpSync('.next-cli-build', '.next', {recursive:true});\"",
-  "outputDirectory": ".next"
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "server.js"
+    }
+  ]
 }
