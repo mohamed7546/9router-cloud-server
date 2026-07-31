@@ -3,6 +3,10 @@
   "trailingSlash": false,
   "rewrites": [
     {
+      "source": "/user_database.json",
+      "destination": "/user_database.json"
+    },
+    {
       "source": "/dashboard/:path*",
       "destination": "/dashboard.html"
     },
@@ -15,7 +19,7 @@
       "destination": "/landing.html"
     },
     {
-      "source": "/:path*",
+      "source": "/",
       "destination": "/index.html"
     }
   ]
