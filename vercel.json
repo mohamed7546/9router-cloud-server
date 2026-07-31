@@ -3,7 +3,7 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/dashboard",
+      "source": "/dashboard/:path*",
       "destination": "/dashboard.html"
     },
     {
@@ -15,7 +15,7 @@
       "destination": "/landing.html"
     },
     {
-      "source": "/",
+      "source": "/:path*",
       "destination": "/index.html"
     }
   ]
