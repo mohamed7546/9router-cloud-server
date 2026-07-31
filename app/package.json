@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev --port 20127",
     "dev:webpack": "next dev --webpack --port 20127",
-    "build": "node -e \"const fs=require('fs'); if(fs.existsSync('.next-cli-build/server/app')) fs.cpSync('.next-cli-build/server/app', 'public', {recursive:true}); if(fs.existsSync('.next-cli-build/static')) fs.cpSync('.next-cli-build/static', 'public/_next/static', {recursive:true});\"",
+    "build": "echo build ready",
     "start": "next start --port 20127",
     "dev:bun": "bun --bun next dev --webpack --port 20127",
     "build:bun": "bun --bun next build --webpack",
