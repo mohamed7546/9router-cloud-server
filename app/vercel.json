@@ -1,24 +1,8 @@
 {
-  "routes": [
+  "rewrites": [
     {
-      "src": "/_next/(.*)",
-      "dest": "/static/"
-    },
-    {
-      "src": "/login",
-      "dest": "/server/app/login.html"
-    },
-    {
-      "src": "/dashboard",
-      "dest": "/server/app/dashboard.html"
-    },
-    {
-      "src": "/landing",
-      "dest": "/server/app/landing.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/server/app/index.html"
+      "source": "/(.*)",
+      "destination": "/api/index.js"
     }
   ]
 }
