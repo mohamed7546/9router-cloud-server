@@ -1,0 +1,5 @@
+{
+  "framework": null,
+  "buildCommand": "node -e \"const fs=require('fs'); if(fs.existsSync('.next-cli-build')) fs.cpSync('.next-cli-build', '.next', {recursive:true});\"",
+  "outputDirectory": ".next"
+}
